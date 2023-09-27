@@ -1,0 +1,272 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revotronics</title>
+    <link rel="icon" type="image/x-icon" href="./img/rogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+    <link href="./vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./css/skin.css" rel="stylesheet" />
+    <link href="./css/notPC.css" rel="stylesheet" />
+    <link href="./vendors/counter/flipdown.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body id="bdy">
+    <!-- Fangs and other fixed elements -->
+    <div id="bgimage"></div>
+    <div id="bgimage"></div>
+    <img src="./img/fangs.png" class="fangs topFangs" />
+    <img src="./img/fangsdown.png" class="fangs bottomFangs" />
+    <i onclick="myScrollTo('aboutdiv')" class="bi bi-chevron-double-down gradient1 myHueRotationAnimation fadeup" id="bottomDirect"></i>
+
+    <!-- Hero div -->
+    <br><br>
+    <div id="herodiv" class="vhcontainer myFlex centerFlex">
+        <div id="herotext">
+            <h3 id="dept" style="color: purple;font-weight: bolder;"></h3>
+            <h3 id="pp" style="color: purple;font-family: 'Sofia Sans Extra Condensed', sans-serif;font-size: 35px;"></h3>
+            <div data-aos="zoom-in" data-aos-once="true" data-aos-delay="2250" id="img_part">
+                <h3 style="color: purple;"><b>A NATIONAL LEVEL TECHNICAL SYMPOSIUM</b></h3>       
+                <img class="img-fluid" src="img/homepage_img_txt.png" alt="logo">
+                <h1 style="color: purple;font-size: 50px;font-family: 'Exo 2', sans-serif;"><b>2023</b></h1><br>
+                <h5 class="extraBold gradient2 " style="margin-top:0;">Revoke . Resonate . Radiate</h5>
+            </div>
+            <div data-aos="fade-up" id="reg_part">
+                <button id="registerHeroButton" class="btn-large myGradientRotationAnimation" onclick="openInNewTab('https://forms.gle/oDna6wxXPvvJVFYN8')">Register Now</button>
+                <div class="myFlex" id="socialMediaSection">
+                    <i onclick="window.open('https://www.instagram.com/revotronics_2022/', '_blank').focus();" class="socialMediaIcons bi bi-instagram gradient1"></i>
+                    <i onclick="window.open('https://goo.gl/maps/4pcpvt7NP187tNDn6', '_blank').focus();" class="socialMediaIcons bi bi-geo-alt-fill gradient1"></i>
+                    <i onclick="window.open('https://rectransport.com/', '_blank').focus();" class="socialMediaIcons bx bx-bus gradient1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About div -->
+    <div id="aboutdiv" class="vhcontainer myFlex centerFlex" style="height:70vh;">
+        <div class="column2flex">
+            <img src="./img/brouch.png" class="columnImage" onclick="window.open('./img/brouch.png', '_blank').focus();" />
+            <div class="myFlex centerFlex columnText">
+                <p>
+                    Thrilled to announce the remarkable event is back after 4 long years! We, the Department of Electronics and communication Engineering are all set to emphasize the hidden talents of the disciples. Get ready folks as the national level Techfest <span class="gradient0 extraBold">REVOTRONICS 2022</span> is down the lane falling on <br><span class="gradient0 extraBold">05-11-2022(Saturday).</span> Excited to make a memorable day for you!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="myHeader extraBold gradient0">Registration Ends In</h2>
+    <div id="registerBy" class="flipdown" style="width:max-content;margin:auto;margin-bottom:20rem;"></div>
+
+    <h2 style="display:none;" class="myHeader extraBold gradient0">Event Starts In</h2>
+    <div id="eventBy" class="flipdown" style="display:none;width:max-content;margin:auto;margin-bottom:20rem;"></div>
+
+    <!-- Event List -->
+    <h2 class="myHeader extraBold gradient0">Events</h2>
+    <div id="eventdiv" class="triangle">
+        <div class="myFlex centerFlex columnText">
+            <ul class="columnList">
+                <li onclick="myScrollTo('paperpresentation')"><h4>Paper Presentation</h4></li>
+                <li onclick="myScrollTo('reverseit')"><h4>Reverse It</h4></li>
+                <li onclick="myScrollTo('sharktank')"><h4>Shark Tank</h4></li>
+                <li onclick="myScrollTo('ceointhehouse')"><h4>CEO in the House</h4></li>
+            </ul>
+        </div>
+        <div class="myFlex centerFlex columnText">
+            <ul class="columnList">
+                <li onclick="myScrollTo('cluedo')"><h4>Clue Do</h4></li>
+                <li onclick="myScrollTo('blockandtackle')"><h4>Block & Tackle</h4></li>
+                <li onclick="myScrollTo('spinayarn')"><h4>Spin A Yarn</h4></li>
+                <li onclick="myScrollTo('memeit')"><h4>Meme It Up</h4></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Events -->
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Paper Presentation</h3>
+    <div id="paperpresentation" class="myFlex centerFlex">
+        <div class="column2flex">
+            <img src="./img/page0/pp.png" class="columnImage" onclick="window.open('./img/page0/pp.png', '_blank').focus();" />
+            <div class="myFlex centerFlex columnText">
+                <p>
+                    Reliable Engineers takes many forms, one of which is a presentor. Present and get recognized for your work. The success of your presentation will be measured not by what you say, but rather by what the listener understands.<br><button onclick="window.location.assign('./page0.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Reverse It</h3>
+    <div id="reverseit" class="myFlex centerFlex">
+        <div class="column2flexinv">
+            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
+                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
+                    Test your technical knowledge. Participate in the circuitry event. Amplify your thinking, resist the ambiguity and showcase your capacity in designing circuits.<br><button onclick="window.location.assign('./page1.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+            <img src="./img/page1/ri.png" class="columnImage row1" onclick="window.open('./img/page1/ri.png', '_blank').focus();" />
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Shark Tank</h3>
+    <div id="sharktank" class="myFlex centerFlex">
+        <div class="column2flex">
+            <img src="./img/page2/st.png" class="columnImage" onclick="window.open('./img/page2/st.png', '_blank').focus();" />
+            <div class="myFlex centerFlex columnText">
+                <p>
+                    Being an Entrepreneur, pitch your product and trap the sharks to invest in your business using your innovative marketing and advertisement skill.<br><button onclick="window.location.assign('./page2.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">CEO in the House</h3>
+    <div id="ceointhehouse" class="myFlex centerFlex">
+        <div class="column2flexinv">
+            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
+                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
+                    Portray your analytical, managerial, and presence of mind skills, and figure out a solution for the presented situation.<br><button onclick="window.location.assign('./page3.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+            <img src="./img/page3/ceo.png" class="columnImage row1" onclick="window.open('./img/page3/ceo.png', '_blank').focus();" />
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Clue Do</h3>
+    <div id="cluedo" class="myFlex centerFlex">
+        <div class="column2flex">
+            <img src="./img/page4/cd.png" class="columnImage" onclick="window.open('./img/page4/cd.png', '_blank').focus();" />
+            <div class="myFlex centerFlex columnText">
+                <p>
+                    Aiming at spot-lighting the big brains, the event focuses on intellectual abilities of the participants. Rack your brains and score the highest points.<br><button onclick="window.location.assign('./page4.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Block & Tackle</h3>
+    <div id="blockandtackle" class="myFlex centerFlex">
+        <div class="column2flexinv">
+            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
+                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
+                    Train the double agent spy in you. Bring out your imagination and talk for or against a topic for each switch command.<br><button onclick="window.location.assign('./page5.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+            <img src="./img/page5/bat.png" class="columnImage row1" onclick="window.open('./img/page5/bat.png', '_blank').focus();" />
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Spin A Yarn</h3>
+    <div id="spinayarn" class="myFlex centerFlex">
+        <div class="column2flex">
+            <img src="./img/page6/sy.png" class="columnImage" onclick="window.open('./img/page6/sy.png', '_blank').focus();" />
+            <div class="myFlex centerFlex columnText">
+                <p>
+                    Weave your creative story from the introductory sentence. Begin with what is concluded and form the story logically and meaningfully.<br><button onclick="window.location.assign('./page6.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Meme It Up</h3>
+    <div id="memeit" class="myFlex centerFlex">
+        <div class="column2flexinv">
+            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
+                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
+                    Meme creators out there !<br>It's high time for you to showcase your skills express your thoughts on the given topic. We are more than excited to know your untold perspective.<br><button onclick="window.location.assign('./page7.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </p>
+            </div>
+            <img src="./img/page7/mit.png" class="columnImage row1" onclick="window.open('./img/page7/mit.png', '_blank').focus();" />
+        </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="myHeader extraBold gradient0">General Guidelines</h2>
+    <div class="generalDiv" style="width:max-content;max-width:90%;margin:auto;position:relative;z-index: 10001;">
+        1. 150 rupees is the registration fee per head for the entire event.<br><br>
+        2. For team events the team leader has to pay for their team (i.e)150 per head.<br><br>
+        3. Only registered participants will be allowed to attend the event , on spot registrations will not be entertained.<br><br>
+        4. It is mandatory for the participants to provide their college ID at the help desk for verification.<br><br>
+        5. Proper attire should be followed by the participants.<br><br>
+        6. A participant is not restricted to participation in any number of events as long as the event timings do not clash.<br><br>
+        7. All the events will commence at the scheduled time , participants are requested to be punctual.<br><br>
+        8. Participants are requested to collect the event tags from the help desk present in the workshop block .<br><br>
+        9. No refund on the registration fees will be encouraged.<br><br>
+        10. Students should refrain from abusive language, obscene display and a good decorum will be appreciated.<br><br>
+        11. Smoking, consumption of alcohol or any such substance is strictly prohibited inside the college premises.<br><br> 
+        12. Rules are subject to changes at the discretion of the management or the event organisers.
+    </div><br><br>
+
+    <!-- Co ordinator List -->
+    <h2 class="myHeader extraBold gradient0">Contacts</h2>
+    <h5 class="myHeader extraBold gradient0">Event Co-ordinators</h5>
+    <div class="triangle">
+        <div>
+            <h5 class="extraBold">Bathri</h5>
+            <!-- <h6 class="myHeader extraBold gradient0">President</h6> -->
+            <h6>70949 21230</h6>
+        </div>
+        <div>
+            <h5 class="extraBold">Sanjana</h5>
+            <!-- <h6 class="myHeader extraBold gradient0">Vice President</h6> -->
+            <h6>91505 80817</h6>
+        </div>
+    </div>
+    <div class="triangle" style="display:block;">
+        <h5 class="extraBold">Harikarthikeyan</h5>
+        <!-- <h6 class="myHeader extraBold gradient0">Event Manager</h6> -->
+        <h6>91763 28924</h6>
+    </div>
+    <br><br>
+
+    <div class="myfooter">
+        <span  class="footer"style="display:block;color:white;margin:auto;font-weight: 600;width: max-content;max-width: 90%;">Sponsored by</span><br><br>
+        <img src="./img/reclogo.png" style="display:block;width: max-content; max-width: 90%;margin:auto;" />
+        <br>
+    </div>
+    <script>
+        var i=0,j=0,text,text1;
+        text = "ELECTRONICS AND COMMUNICATION ENGINEERING";
+        text1 = "PROUDLY PRESENTS";
+        function typing() {
+            if(i<text.length) {
+                document.getElementById("dept").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typing, 40);
+            }
+        }
+        typing();     
+        function typing1() {
+            if(j<text1.length) {
+                document.getElementById("pp").innerHTML += text1.charAt(j);
+                j++;
+                setTimeout(typing1, 120);
+            }
+        }
+        typing1();  
+    </script>
+    <script src="./vendors/counter/flipdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/auto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

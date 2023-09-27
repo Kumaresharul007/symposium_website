@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --neonBlue : #189edd;
+    --neonViolet : #371269;
+    --neonPink : #f443fc;
+}
+
+@font-face {
+    font-family: verminVibes;
+    src: url(./fonts/VerminVibes.woff);
+}
+
+html{
+    background-color:#0b1014;
+}
+
+#bdy{
+    background-color:transparent;
+}
+
+.fangs{
+    position:fixed;
+    left:0;
+    z-index: 10000;
+    width:100%;
+    /*display: none; /*DELETE ME*/
+}
+
+.topFangs{
+    top:0;
+}
+
+.bottomFangs{
+    bottom:0;
+    z-index: 10002;
+    display: none;
+}
+
+.vhcontainer{
+    width:100% !important;
+    display:block;
+    height:100vh !important;
+    margin:0 !important;
+}
+
+.myFlex{
+    display: flex;
+    flex-direction: row;
+}
+
+.centerFlex{
+    justify-content: center;
+    align-items: center;
+}
+
+#herotext{
+    text-align: center;
+    position: relative;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.revo{
+    font-family: verminVibes;
+    letter-spacing: 2px;
+    font-size: larger;
+    -webkit-text-stroke: 0.01px black;
+}
+
+#registerHeroButton{
+    margin:1rem;
+    font-weight: 600;
+    background: linear-gradient(45deg,var(--neonBlue), var(--neonPink), var(--neonViolet));
+    border-radius: 4px;
+    position: relative;
+    z-index: 10003;
+    transition: all .2s ease-in-out;
+}
+
+#registerHeroButton:hover{
+    transform: scale(1.1);
+}
+
+.extraBold{
+    font-weight: 700;
+}
+
+.gradient0{
+    background: -webkit-linear-gradient(var(--neonBlue), var(--neonPink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient1{
+    background: -webkit-linear-gradient(var(--neonBlue), var(--neonViolet));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient2{
+    background: -webkit-linear-gradient(var(--neonPink), var(--neonViolet));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#bottomDirect{
+    position: fixed;
+    bottom: 20px;
+    left:calc(50% - 24px);
+    z-index: 3;
+    font-size: 48px;
+}
+
+.myHueRotationAnimation{
+    animation: hue-rotate 3s linear infinite;
+}
+
+@keyframes hue-rotate {
+    from {
+        -webkit-filter: hue-rotate(0);
+        -moz-filter: hue-rotate(0);
+        -ms-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -ms-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#socialMediaSection{
+    width:max-content;
+    margin:auto;
+}
+
+.socialMediaIcons{
+    font-size: 28px;
+    padding:0.5rem;
+    margin:0.5rem;
+    position: relative;
+    z-index: 10003;
+    transition: all .2s ease-in-out;
+}
+
+.socialMediaIcons:hover{
+    transform: scale(1.37);
+    margin-right:1.7rem;
+    margin-left:1.7rem;
+}
+
+#bgimage{
+    background-image: url("./../img/BG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top:0;left:0;
+    width:100%;
+    height:100vh;
+    z-index:-1;
+}
+
+.column2flex{
+    width:90%;
+    display:grid;
+    grid-template-columns: 40% auto;
+    position: relative;
+    z-index: 10001;
+}
+
+.column2flexinv{
+    width:90%;
+    display:grid;
+    grid-template-columns: auto 40%;
+    position: relative;
+    z-index: 10001;
+}
+
+.column2flex_page{
+    width:80%;
+    display:grid;
+    grid-template-columns: 35% auto;
+    position: relative;
+    z-index: 10001;
+}
+
+.columnImage{
+    width:80%;
+    margin:auto;
+    box-shadow: 0px 0px 30px 1px var(--neonBlue);
+}
+
+.columnText{
+    color:white;
+    font-size: 1.7rem;
+    text-align: justify;
+    text-align-last: center;
+}
+
+#herologo{
+    width:200px !important;
+    max-width: 70% !important;
+    margin-bottom: 0;
+}
+
+.myHeader{
+    text-align: center;
+}
+
+.columnList{
+    text-align: left !important;
+}
+
+.columnDiv{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+li{
+    cursor: pointer;
+    z-index: 10010;
+}
+
+.knowmore{
+    background: -webkit-linear-gradient(var(--neonBlue), var(--neonViolet));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10010;
+    transition: all .2s ease-in-out; 
+    box-shadow: 0px 0px 20px 1px var(--neonBlue) !important;
+}
+
+.generalDiv{
+    font-size: larger;
+    color:white;
+    text-align: justify;
+}
+
+.myFooter{
+    width:100%;
+    height:max-content;
+    padding:3rem;
+    background-color: #00000088;
+}
+
+button{
+    position: relative;
+    z-index:20000 !important;
+}
+
+.triangle{
+    color:white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
