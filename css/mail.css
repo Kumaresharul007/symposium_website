@@ -1,0 +1,26 @@
+p {
+    font-weight: bold;
+    font-size: 18px;
+}
+h3 {
+    font-weight: bold;
+    color: purple;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@font-face {
+    font-family: verminVibes;
+    src: url(./fonts/VerminVibes.woff);
+}
+.logo b{
+    font-size: 50px;
+    list-style-type: none;
+    font-family: verminVibes ;
+    user-select: none;
+    background: linear-gradient(to right, #6BCBDE, #2C296A, #453C95, #CC1D68, #D21B65); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    /* text-shadow: 0 -10px 70px, 0 0 2px, 0 0 1em #f443fc, 0 0 0.5em #f443fc, 0 0 0.1em #f443fc, 0 10px 3px #371269; */
+}
+.extraBold{
+    font-weight: 700;
+}

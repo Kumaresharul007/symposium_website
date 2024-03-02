@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            background: rgba(0, 0, 0, 0.6) url(img/bg_img.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+        }
+        input{
+            width: 100%;
+        }
+        form {
+            border: 2px solid white;
+            padding: 26px;
+            border-radius: 18px;
+            box-shadow: 3px 12px 12px purple;
+        }
+        label {
+            color: white;
+        }
+        form img {
+            margin-left: 28%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <img height="100px" src="img/rogo.png" alt="logo"><br><br>
+        <h3 style="color: white;">CREATE YOUR PROFILE</h3><br>
+        <label for="dept">Name</label><br>
+        <input class="form-control" id="dept" name="dept" type="text" placeholder="Enter your name" required><br>
+        <label for="dept">Register Number</label><br>
+        <input class="form-control" id="dept" name="dept" type="number" placeholder="Enter your Register Number" required><br>
+        <label for="year">Year</label><br>
+        <select class="form-select" name="year" id="year">
+            <option value="">--select--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br>
+        <label for="dept">Department</label><br>
+        <input class="form-control" id="dept" name="dept" type="text" placeholder="Enter your Department" required><br>
+        <label for="sec">Section</label><br>
+        <input class="form-control" id="sec" name="sec" type="text" placeholder="Enter your Section" required><br>
+        <label for="no">Contact Number</label><br>
+        <input class="form-control" id="no" name="no" type="number" placeholder="Enter your contact number" required><br>
+        <input class="btn btn-success" type="submit" name="submit" value="SUBMIT">
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

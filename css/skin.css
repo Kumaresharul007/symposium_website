@@ -14,48 +14,23 @@
     src: url(./fonts/VerminVibes.woff);
 }
 
-html{
-    background-color:#0b1014;
+.move_right {
+    text-align: right;
+    margin-right: 26px;
 }
 
 #bdy{
     background-color:transparent;
 }
 
-.fangs{
-    position:fixed;
-    left:0;
-    z-index: 10000;
-    width:100%;
-    /*display: none; /*DELETE ME*/
-}
-
-.topFangs{
-    top:0;
-}
-
-.bottomFangs{
-    bottom:0;
-    z-index: 10002;
-    display: none;
-}
-
-.vhcontainer{
+/* .vhcontainer{
     width:100% !important;
     display:block;
     height:100vh !important;
-    margin:0 !important;
-}
-
-.myFlex{
     display: flex;
-    flex-direction: row;
-}
-
-.centerFlex{
-    justify-content: center;
     align-items: center;
-}
+    justify-content: center;
+} */
 
 #herotext{
     text-align: center;
@@ -160,18 +135,6 @@ html{
     margin-left:1.7rem;
 }
 
-#bgimage{
-    background-image: url("./../img/BG.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: fixed;
-    top:0;left:0;
-    width:100%;
-    height:100vh;
-    z-index:-1;
-}
-
 .column2flex{
     width:90%;
     display:grid;
@@ -207,6 +170,21 @@ html{
     font-size: 1.7rem;
     text-align: justify;
     text-align-last: center;
+}
+
+.about_event h3{
+    color: lightseagreen;
+}
+.about_event p {
+    color: white;
+    font-size: 20px;
+}
+.about_event li {
+    color: white;
+    font-size: 20px;
+}
+.about_event span {
+    text-decoration: underline;
 }
 
 #herologo{
@@ -255,8 +233,9 @@ li{
       touch-action: manipulation;
       white-space: nowrap;
       cursor: pointer;
+      margin-top: 50px;
     }
-    
+
     .button-63:active,
     .button-63:hover {
       outline: 0;
@@ -293,4 +272,97 @@ button{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
+}
+
+/* .logo {
+    display: flex;
+    justify-content: center;
+    font-size: 104px;
+    list-style-type: none;
+    display: flex;
+    font-family: verminVibes ;
+    user-select: none;
+} */
+
+.logo b{
+    display: flex;
+    justify-content: center;
+    font-size: 104px;
+    list-style-type: none;
+    font-family: verminVibes ;
+    user-select: none;
+    background: linear-gradient(to right, #6BCBDE, #2C296A, #453C95, #CC1D68, #D21B65); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    /* text-shadow: 0 -10px 70px, 0 0 2px, 0 0 1em #f443fc, 0 0 0.5em #f443fc, 0 0 0.1em #f443fc, 0 10px 3px #371269; */
+}
+
+.bg_clip {
+    z-index: -1;
+    position: absolute;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.card {
+    width: 350px;
+    overflow: hidden;   
+}
+.card img {
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.3);
+    filter: brightness(20%);
+}
+
+.card:hover{
+    transform: scale(1.15);
+    transition: all 0.3s;
+    z-index: 1;
+}
+.content {
+    position: absolute;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+}
+.content h3 {
+    font-size: 32px;
+    color: lightseagreen;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s;
+}
+.content p {
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s;
+}
+.content button {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s;
+}
+#events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card:hover .content h3 {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.card:hover .content p {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.card:hover .content button {
+    transform: translateY(0px);
+    opacity: 1;
 }

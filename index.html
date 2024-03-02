@@ -20,27 +20,38 @@
 
 </head>
 <body id="bdy">
-    <!-- Fangs and other fixed elements -->
-    <div id="bgimage"></div>
-    <div id="bgimage"></div>
-    <img src="./img/fangs.png" class="fangs topFangs" />
-    <img src="./img/fangsdown.png" class="fangs bottomFangs" />
-    <i onclick="myScrollTo('aboutdiv')" class="bi bi-chevron-double-down gradient1 myHueRotationAnimation fadeup" id="bottomDirect"></i>
-
-    <!-- Hero div -->
-    <br><br>
-    <div id="herodiv" class="vhcontainer myFlex centerFlex">
+    <video class="bg_clip" autoplay loop muted play-inline>
+        <source src="img/revo_vid.mov" type="video/mp4">
+    </video>
+    <!-- <i onclick="myScrollTo('aboutdiv')" class="bi bi-chevron-double-down gradient1 myHueRotationAnimation fadeup" id="bottomDirect"></i>
+    Hero div -->
+    <br>
+    <div class="move_right">
+        <a href="SignIn.html" class="btn btn-outline-info">LOGIN</a>
+    </div>
+    <div class="move_right dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          KUMARESH A
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Log Out</a>
+        </div>
+    </div><br><br><br>
+    <div class="container">
         <div id="herotext">
-            <h3 id="dept" style="color: purple;font-weight: bolder;"></h3>
-            <h3 id="pp" style="color: purple;font-family: 'Sofia Sans Extra Condensed', sans-serif;font-size: 35px;"></h3>
-            <div data-aos="zoom-in" data-aos-once="true" data-aos-delay="2250" id="img_part">
-                <h3 style="color: purple;"><b>A NATIONAL LEVEL TECHNICAL SYMPOSIUM</b></h3>       
-                <img class="img-fluid" src="img/homepage_img_txt.png" alt="logo">
-                <h1 style="color: purple;font-size: 50px;font-family: 'Exo 2', sans-serif;"><b>2023</b></h1><br>
-                <h5 class="extraBold gradient2 " style="margin-top:0;">Revoke . Resonate . Radiate</h5>
+            <div data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
+                <h3 style="color: white;font-weight: bolder;">ELECTRONICS AND COMMUNICATION ENGINEERING</h3>
+                <h3 style="color: white;font-family: 'Sofia Sans Extra Condensed', sans-serif;font-size: 35px;">PROUDLY PRESENTS</h3><br>
             </div>
-            <div data-aos="fade-up" id="reg_part">
+            <div data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000" id="img_part">
+                <h3 style="color: lightseagreen;"><b>A NATIONAL LEVEL TECHNICAL SYMPOSIUM</b></h3><br>
+                <!-- <img class="img-fluid" src="img/homepage_img_txt.png" alt="logo"> -->
+                <h1 class="logo extraBold" style="-webkit-text-stroke:0px transparent;"><b>REVOTRONICS</b></h1>
+                <h1 style="color: lightseagreen;font-size: 50px;font-family: 'Exo 2', sans-serif;"><b>2023</b></h1>
+            </div><br>
+            <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" id="reg_part">
                 <button id="registerHeroButton" class="btn-large myGradientRotationAnimation" onclick="openInNewTab('https://forms.gle/oDna6wxXPvvJVFYN8')">Register Now</button>
+                <a href="#eventcards" id="registerHeroButton" class="btn-large myGradientRotationAnimation">Explore Events</a>
                 <div class="myFlex" id="socialMediaSection">
                     <i onclick="window.open('https://www.instagram.com/revotronics_2022/', '_blank').focus();" class="socialMediaIcons bi bi-instagram gradient1"></i>
                     <i onclick="window.open('https://goo.gl/maps/4pcpvt7NP187tNDn6', '_blank').focus();" class="socialMediaIcons bi bi-geo-alt-fill gradient1"></i>
@@ -48,154 +59,133 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br><br>
+
+    <div id="aboutdiv" class="container">
+        <h2 align="center" class="extraBold gradient0">About REC</h2>
+        <p class="columnText">
+            Rajalakshmi Engineering College is an autonomous Institution affiliated with Anna University, which was established in the year 1997. As a proud Institution with 26 years of academic excellence, it has been ranked as the third most preferred private Engineering college in Tamil Nadu. This Institution has been consistently providing high quality professionals by offering 19 UG, 11 PG courses, and Management studies along with a school of architecture and a school of nursing.
+        </p>
+    </div><br><br><br>
+
+    <div class="container">
+        <h2 align="center" class="extraBold gradient0">About ECE</h2>
+        <p class="columnText">
+            The Department of Electronics and Communication Engineering was established in the year 1997. This Department offers cutting-edge programs in Undergraduate, Post Graduate, and Ph.D. The Department of ECE has been cultivating a culture of research orientation in its students from the very beginning, thereby felicitating the development of high-caliber researchers. More than 95% of the eligible students of ECE are being placed in reputed companies every year. This department has been consistently producing globally competent Electronics and Communication Engineers since its inception. 
+        </p>
+    </div><br><br><br>
 
     <!-- About div -->
-    <div id="aboutdiv" class="vhcontainer myFlex centerFlex" style="height:70vh;">
-        <div class="column2flex">
-            <img src="./img/brouch.png" class="columnImage" onclick="window.open('./img/brouch.png', '_blank').focus();" />
-            <div class="myFlex centerFlex columnText">
+    <div class="container">
+        <h2 align="center" class="extraBold gradient0">About the Event</h2><br>
+        <div class="row justify-content-between">
+            <div class="col-md-5 text-center">
+                <img onclick="openInNewTab('./img/page0/pp.png')" src="./img/page0/pp.png" class="columnImage" style="position:relative;z-index:10015;" />
+            </div>
+            <div class="col-md-6 columnText">
                 <p>
-                    Thrilled to announce the remarkable event is back after 4 long years! We, the Department of Electronics and communication Engineering are all set to emphasize the hidden talents of the disciples. Get ready folks as the national level Techfest <span class="gradient0 extraBold">REVOTRONICS 2022</span> is down the lane falling on <br><span class="gradient0 extraBold">05-11-2022(Saturday).</span> Excited to make a memorable day for you!
+                    Revotronics is a national level technical symposium that is conducted every year by the Department of Electronics and Communication Engineering. This symposium serves as a platform for discussing upcoming trends, exploring the latest technological advancements, and sharing innovative research. Revotronics involves a total of 10 events with 5 in technical and 5 non-technical domains. All these events will feature guest speakers and experts who will share their knowledge and insights with the attendees. This symposium plays a crucial role in bridging the academic and industrial gap which contributes to the advancement of innovation and technology in Electronics and Communication Engineering.
                 </p>
             </div>
         </div>
-    </div>
+    </div><br><br><br>
 
-    <h2 class="myHeader extraBold gradient0">Registration Ends In</h2>
-    <div id="registerBy" class="flipdown" style="width:max-content;margin:auto;margin-bottom:20rem;"></div>
+    <!-- <h2 class="myHeader extraBold gradient0">Registration Ends In</h2><br>
+    <div id="registerBy" class="flipdown" style="width:max-content;margin:auto;"></div>
 
     <h2 style="display:none;" class="myHeader extraBold gradient0">Event Starts In</h2>
-    <div id="eventBy" class="flipdown" style="display:none;width:max-content;margin:auto;margin-bottom:20rem;"></div>
+    <div id="eventBy" class="flipdown" style="display:none;width:max-content;margin:auto;"></div><br><br><br><br> -->
 
     <!-- Event List -->
+    <div id="eventcards"></div>
     <h2 class="myHeader extraBold gradient0">Events</h2>
-    <div id="eventdiv" class="triangle">
-        <div class="myFlex centerFlex columnText">
-            <ul class="columnList">
-                <li onclick="myScrollTo('paperpresentation')"><h4>Paper Presentation</h4></li>
-                <li onclick="myScrollTo('reverseit')"><h4>Reverse It</h4></li>
-                <li onclick="myScrollTo('sharktank')"><h4>Shark Tank</h4></li>
-                <li onclick="myScrollTo('ceointhehouse')"><h4>CEO in the House</h4></li>
-            </ul>
-        </div>
-        <div class="myFlex centerFlex columnText">
-            <ul class="columnList">
-                <li onclick="myScrollTo('cluedo')"><h4>Clue Do</h4></li>
-                <li onclick="myScrollTo('blockandtackle')"><h4>Block & Tackle</h4></li>
-                <li onclick="myScrollTo('spinayarn')"><h4>Spin A Yarn</h4></li>
-                <li onclick="myScrollTo('memeit')"><h4>Meme It Up</h4></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Events -->
     <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Paper Presentation</h3>
-    <div id="paperpresentation" class="myFlex centerFlex">
-        <div class="column2flex">
-            <img src="./img/page0/pp.png" class="columnImage" onclick="window.open('./img/page0/pp.png', '_blank').focus();" />
-            <div class="myFlex centerFlex columnText">
-                <p>
-                    Reliable Engineers takes many forms, one of which is a presentor. Present and get recognized for your work. The success of your presentation will be measured not by what you say, but rather by what the listener understands.<br><button onclick="window.location.assign('./page0.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
+    <div class="container">
+        <div id="events">
+            <div class="card card0">
+                <img src="img/poster_0.jpg" alt="event">
+                <div class="content">
+                    <h3>Paper Presentation</h3><br>
+                    <p>This paper presentation elucidates a comprehensive analysis through an innovative lens, highlighting its implications for Electronics and Communication and related fields.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page0.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card1">
+                <img src="img/poster_1.jpg" alt="event">
+                <div class="content">
+                    <h3>Guesstronics</h3><br>
+                    <p>An entertaining event that tests your tech knowledge and quick thinking. So bring out the creative thinker in you by connecting the dots.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page1.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card2">
+                <img src="img/poster_2.jpg" alt="event">
+                <div class="content">
+                    <h3>ElectroSwaggers</h3><br>
+                    <p>Electroswaggers is a technical event that tests participants’ knowledge of electronics through practical challenges and theoretical assessments.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page2.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card3">
+                <img src="img/poster_3.jpg" alt="event">
+                <div class="content">
+                    <h3>ElectroQuest</h3><br>
+                    <p>This event challenges participants in various aspects of electronics, including logic gate identification, soldering, and circuit design. It offers a platform for enthusiasts to demonstrate their skills and knowledge in the field.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page3.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card4">
+                <img src="img/poster_4.jpg" alt="event">
+                <div class="content">
+                    <h3>CS2 - Code Scramble Showdown</h3><br>
+                    <p>Get ready for an exceptional code-breaking challenge! The "CS2 - Code Scramble Showdown" will test your reverse engineering skills.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page4.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card5">
+                <img src="img/poster_5.png" alt="event">
+                <div class="content">
+                    <h3>Bid Wars</h3><br>
+                    <p>Get ready to flaunt your financial finesse at our IPL Auction event. Compete with the best and turn every penny into a powerhouse player.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page5.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card6">
+                <img src="img/poster_6.png" alt="event">
+                <div class="content">
+                    <h3>Fun o’Pedia</h3><br>
+                    <p>An event aimed to achieve fun based skill testing, which includes intensive thinking, general knowledge and basic mathematical and logical skills. The event divides into 3-levels, subsequntly shorting down on 2 or 3 winners.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page6.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card7">
+                <img src="img/poster_7.png" alt="event">
+                <div class="content">
+                    <h3>Guess Work?</h3><br>
+                    <p>This event focuses on creativity.It enhances teamwork,artistic skills, and imagination.This dynamic will exercise your mind while promoting social engagement!!This consists of two rounds to determine who has that freaking creativity skills!</p>
+                    <button style="color: white;" onclick="window.location.assign('./page7.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card8">
+                <img src="img/poster_8.png" alt="event">
+                <div class="content">
+                    <h3>Debate - Rhetorix</h3><br>
+                    <p>Get ready to present your perspective in the battle of Rhetorix.</p>
+                    <button style="color: white;" onclick="window.location.assign('./page8.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
+            </div>
+            <div class="card card9">
+                <img src="img/poster_9.png" alt="event">
+                <div class="content">
+                    <h3>Rhyme Redux: A Two-Round Ballad Adventure</h3><br>
+                    <p>Event would comprise of two rounds. Click below to know more!</p>
+                    <button style="color: white;" onclick="window.location.assign('./page9.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
+                </div>
             </div>
         </div>
-    </div>
+    </div><br><br>
 
-    <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Reverse It</h3>
-    <div id="reverseit" class="myFlex centerFlex">
-        <div class="column2flexinv">
-            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
-                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
-                    Test your technical knowledge. Participate in the circuitry event. Amplify your thinking, resist the ambiguity and showcase your capacity in designing circuits.<br><button onclick="window.location.assign('./page1.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
-            </div>
-            <img src="./img/page1/ri.png" class="columnImage row1" onclick="window.open('./img/page1/ri.png', '_blank').focus();" />
-        </div>
-    </div>
-
-    <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Shark Tank</h3>
-    <div id="sharktank" class="myFlex centerFlex">
-        <div class="column2flex">
-            <img src="./img/page2/st.png" class="columnImage" onclick="window.open('./img/page2/st.png', '_blank').focus();" />
-            <div class="myFlex centerFlex columnText">
-                <p>
-                    Being an Entrepreneur, pitch your product and trap the sharks to invest in your business using your innovative marketing and advertisement skill.<br><button onclick="window.location.assign('./page2.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">CEO in the House</h3>
-    <div id="ceointhehouse" class="myFlex centerFlex">
-        <div class="column2flexinv">
-            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
-                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
-                    Portray your analytical, managerial, and presence of mind skills, and figure out a solution for the presented situation.<br><button onclick="window.location.assign('./page3.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
-            </div>
-            <img src="./img/page3/ceo.png" class="columnImage row1" onclick="window.open('./img/page3/ceo.png', '_blank').focus();" />
-        </div>
-    </div>
-
-    <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Clue Do</h3>
-    <div id="cluedo" class="myFlex centerFlex">
-        <div class="column2flex">
-            <img src="./img/page4/cd.png" class="columnImage" onclick="window.open('./img/page4/cd.png', '_blank').focus();" />
-            <div class="myFlex centerFlex columnText">
-                <p>
-                    Aiming at spot-lighting the big brains, the event focuses on intellectual abilities of the participants. Rack your brains and score the highest points.<br><button onclick="window.location.assign('./page4.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Block & Tackle</h3>
-    <div id="blockandtackle" class="myFlex centerFlex">
-        <div class="column2flexinv">
-            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
-                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
-                    Train the double agent spy in you. Bring out your imagination and talk for or against a topic for each switch command.<br><button onclick="window.location.assign('./page5.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
-            </div>
-            <img src="./img/page5/bat.png" class="columnImage row1" onclick="window.open('./img/page5/bat.png', '_blank').focus();" />
-        </div>
-    </div>
-
-    <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Spin A Yarn</h3>
-    <div id="spinayarn" class="myFlex centerFlex">
-        <div class="column2flex">
-            <img src="./img/page6/sy.png" class="columnImage" onclick="window.open('./img/page6/sy.png', '_blank').focus();" />
-            <div class="myFlex centerFlex columnText">
-                <p>
-                    Weave your creative story from the introductory sentence. Begin with what is concluded and form the story logically and meaningfully.<br><button onclick="window.location.assign('./page6.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-    <h3 class="myHeader extraBold gradient0" style="margin-bottom:3rem;">Meme It Up</h3>
-    <div id="memeit" class="myFlex centerFlex">
-        <div class="column2flexinv">
-            <div class="myFlex centerFlex columnText row0" style="margin-top:0 !important;">
-                <p style="margin:2rem;margin-top:0 !important;margin-left:0;margin-right:0;">
-                    Meme creators out there !<br>It's high time for you to showcase your skills express your thoughts on the given topic. We are more than excited to know your untold perspective.<br><button onclick="window.location.assign('./page7.html')" class="btn extraBold knowmore" style="margin:1rem;">Know more <i class="bi bi-arrow-up-right-square-fill"></i></button>
-                </p>
-            </div>
-            <img src="./img/page7/mit.png" class="columnImage row1" onclick="window.open('./img/page7/mit.png', '_blank').focus();" />
-        </div>
-    </div>
-    <br><br><br>
-
-    <h2 class="myHeader extraBold gradient0">General Guidelines</h2>
+    <h2 class="myHeader extraBold gradient0">General Guidelines</h2><br>
     <div class="generalDiv" style="width:max-content;max-width:90%;margin:auto;position:relative;z-index: 10001;">
         1. 150 rupees is the registration fee per head for the entire event.<br><br>
         2. For team events the team leader has to pay for their team (i.e)150 per head.<br><br>
@@ -212,33 +202,35 @@
     </div><br><br>
 
     <!-- Co ordinator List -->
-    <h2 class="myHeader extraBold gradient0">Contacts</h2>
+    <h2 class="myHeader extraBold gradient0">Contacts</h2><br>
     <h5 class="myHeader extraBold gradient0">Event Co-ordinators</h5>
-    <div class="triangle">
-        <div>
-            <h5 class="extraBold">Bathri</h5>
-            <!-- <h6 class="myHeader extraBold gradient0">President</h6> -->
-            <h6>70949 21230</h6>
+    <div style="color: white;" class="container">
+        <div class="row justify-content-center">
+            <div style="margin: 20px;" class="col-md-4 text-center">
+                <h5 class="extraBold">JEGAN P</h5>
+                <h6>9952044379</h6>
+            </div>
+            <div style="margin: 20px;" class="col-md-4 text-center">
+                <h5 class="extraBold">SUDARVEL K</h5>
+                <h6>7338965096</h6>
+            </div>
+            <div style="margin: 20px;" class="col-md-4 text-center">
+                <h5 class="extraBold">DANIEL S</h5>
+                <h6>9841057537</h6>
+            </div>
+            <div style="margin: 20px;" class="col-md-4 text-center">
+                <h5 class="extraBold">DEEPTHI P A</h5>
+                <h6>9003151944</h6>
+            </div>
         </div>
-        <div>
-            <h5 class="extraBold">Sanjana</h5>
-            <!-- <h6 class="myHeader extraBold gradient0">Vice President</h6> -->
-            <h6>91505 80817</h6>
-        </div>
-    </div>
-    <div class="triangle" style="display:block;">
-        <h5 class="extraBold">Harikarthikeyan</h5>
-        <!-- <h6 class="myHeader extraBold gradient0">Event Manager</h6> -->
-        <h6>91763 28924</h6>
-    </div>
-    <br><br>
+    </div><br><br>
 
     <div class="myfooter">
         <span  class="footer"style="display:block;color:white;margin:auto;font-weight: 600;width: max-content;max-width: 90%;">Sponsored by</span><br><br>
         <img src="./img/reclogo.png" style="display:block;width: max-content; max-width: 90%;margin:auto;" />
         <br>
     </div>
-    <script>
+    <!-- <script>
         var i=0,j=0,text,text1;
         text = "ELECTRONICS AND COMMUNICATION ENGINEERING";
         text1 = "PROUDLY PRESENTS";
@@ -246,7 +238,7 @@
             if(i<text.length) {
                 document.getElementById("dept").innerHTML += text.charAt(i);
                 i++;
-                setTimeout(typing, 40);
+                setTimeout(typing, 30);
             }
         }
         typing();     
@@ -254,16 +246,17 @@
             if(j<text1.length) {
                 document.getElementById("pp").innerHTML += text1.charAt(j);
                 j++;
-                setTimeout(typing1, 120);
+                setTimeout(typing1, 100);
             }
         }
         typing1();  
-    </script>
+    </script> -->
     <script src="./vendors/counter/flipdown.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./js/auto.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <script src="./js/auto.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

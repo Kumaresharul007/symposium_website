@@ -4,10 +4,10 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
-    setTimeout(function() {  myScrollTo('aboutdiv') }, 5000);
+    setTimeout(function() {  myScrollTo('event_details') }, 5000);
 });
 
-function myScrollTo(id="aboutdiv"){
+function myScrollTo(id="event_details"){
     document.getElementById(id).scrollIntoView({behavior:"smooth",block:"center"});
 }
 
